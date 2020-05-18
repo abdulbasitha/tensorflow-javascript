@@ -43,7 +43,9 @@ async function train(model, data) {
 			d.xs.reshape([TEST_DATA_SIZE, 28, 28, 1]),
 			d.labels
 		];
-	});
+    });
+    
+    
 
 	return model.fit(trainXs, trainYs, {
 		batchSize: BATCH_SIZE,
